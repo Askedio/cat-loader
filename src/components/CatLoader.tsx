@@ -421,8 +421,6 @@ export function CatLoader({
                   }}
                   style={{ cursor: "pointer" }}
                 >
-                  {/* Transparent clickable area */}
-                  <rect x="15" y="38" width="70" height="18" fill="transparent" />
                   {/* Lenses */}
                   <path
                     d="M 20 42 Q 35 42 48 42 Q 50 38 52 42 Q 65 42 80 42 Q 80 52 70 52 Q 60 52 55 48 L 52 46 L 49 48 Q 44 52 34 52 Q 24 52 20 42"
