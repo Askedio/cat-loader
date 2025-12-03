@@ -112,7 +112,6 @@ export function CatLoader({
 }: CatLoaderProps) {
   const [isEating, setIsEating] = useState(false);
   const [hearts, setHearts] = useState<Heart[]>([]);
-  const [isHovered, setIsHovered] = useState(false);
   const [isMeowing, setIsMeowing] = useState(false);
   const [showSunglasses, setShowSunglasses] = useState(false);
   const [idleLapping, setIdleLapping] = useState(false);
@@ -120,7 +119,7 @@ export function CatLoader({
 
   const containerRef = useRef<HTMLDivElement>(null);
   const clickCountRef = useRef(0);
-  const clickTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const clickTimeoutRef = useRef<number | null>(null);
 
   // Override isComplete if alwaysLoading is true
   const effectiveIsComplete = alwaysLoading ? false : isComplete;
@@ -298,7 +297,6 @@ export function CatLoader({
       onMouseDown={() => setIsMouseDown(true)}
       onMouseUp={() => setIsMouseDown(false)}
       onMouseLeave={() => setIsMouseDown(false)}
-      onMouseEnter={() => setIsHovered(true)}
     >
       <motion.svg
         width={size}
