@@ -420,6 +420,7 @@ export function CatLoader({
                     setShowSunglasses(false);
                   }}
                   style={{ cursor: "pointer" }}
+                  stroke="none"
                 >
                   {/* Lenses */}
                   <path
