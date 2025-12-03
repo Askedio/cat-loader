@@ -212,6 +212,16 @@ function App() {
       <div className="header">
         <h1>Cat Loader Demo</h1>
         <p>Animated SVG cat loader with customizable features</p>
+        <div className="github-link">
+          <a
+            href="https://github.com/Askedio/cat-loader"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="github-button"
+          >
+            📦 Download / Clone on GitHub
+          </a>
+        </div>
       </div>
 
       <div className="card">
