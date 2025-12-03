@@ -279,6 +279,29 @@ body {
   white-space: pre;
 }
 
+.footer {
+  margin-top: auto;
+  padding: 2rem 0;
+  text-align: center;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.footer .heart {
+  color: #ff69b4;
+  display: inline-block;
+}
+
+.footer-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;

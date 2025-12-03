@@ -612,6 +612,13 @@ function App() {
           </div>
         </div>
       </div>
+
+      <footer className="footer">
+        Created by Will's ai with <span className="heart">♥</span> and{" "}
+        <a href="mailto:will@willbowman.dev" className="footer-link">
+          will@willbowman.dev
+        </a>
+      </footer>
     </div>
   );
 }
