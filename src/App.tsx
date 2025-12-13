@@ -151,10 +151,14 @@ function App() {
       }
     }
 
-    let code = `import { CatLoader${hasNonDefaultAnimConfig ? ", AnimationConfig" : ""} } from "./components/CatLoader";
+    let code = `import { CatLoader${
+      hasNonDefaultAnimConfig ? ", AnimationConfig" : ""
+    } } from "./components/CatLoader";
 
 <CatLoader
-  ${props.join("\n  ")}${hasNonDefaultAnimConfig ? `\n  animationConfig={{\n${animConfigParts.join("\n")}\n  }}` : ""}
+  ${props.join("\n  ")}${
+      hasNonDefaultAnimConfig ? `\n  animationConfig={{\n${animConfigParts.join("\n")}\n  }}` : ""
+    }
 />`;
 
     return code;
@@ -624,7 +628,7 @@ function App() {
       </div>
 
       <footer className="footer">
-        Created by Will's ai with <span className="heart">♥</span> and{" "}
+        Created by Will with <span className="heart">♥</span> and{" "}
         <a href="mailto:will@willbowman.dev" className="footer-link">
           will@willbowman.dev
         </a>
